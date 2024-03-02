@@ -97,6 +97,8 @@ Our project goal was to develop a prototype of an autonomously driven rideshare 
 
 #### CAD Parts
 Attach images of CAD for base plate, LiDAR/camera mount, GNSS stand/side camera mount, Jetson case (with thingiverse credit), and all other 3D printed parts we end up with here
+![3D CAD Model of Robot Car Assembly](https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/aa99560c-a7ff-4ca0-b913-24ac75bb6eec)
+
 
 #### Hardware
 Talk about the hardware we were provided with here like battery, chassis, VESC, Jetson, GNSS puck, Oak-D etc etc and address the circuit diagram below.
