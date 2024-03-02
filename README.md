@@ -86,7 +86,7 @@ Our project goal was to develop a prototype of an autonomously driven rideshare 
 #### Final Project Documentation
 
 * [Final Project Proposal](https://docs.google.com/presentation/d/199oVWJiOSEHAjcmizN8rejuzU7rHNCNl4qY55uGqgxQ/edit?usp=sharing)
-* Link to first progress update will go here
+* [Progress Update](https://github.com/kiers-neely/ucsd-mae-148-team-4/files/14469441/mae148-slides-update.pdf)
 * Link to initial workflow/component outline
 * Link to final presentation here
 
