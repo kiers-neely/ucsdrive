@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from user_input_interfaces.msg import RideMatch  # Import the custom message
 import face_recognition
 import cv2
 import numpy as np
@@ -9,7 +9,7 @@ import os
 class FaceRecognitionPublisher(Node):
     def __init__(self):
         super().__init__('face_recognition_publisher')
-        self.publisher_ = self.create_publisher(String, 'identified_faces', 10)
+        self.publisher_ = self.create_publisher(RideMatch, 'identified_faces', 10)
         self.timer_period = 0.1  # seconds
         self.timer = self.create_timer(self.timer_period, self.publish_identified_face)
 
@@ -18,7 +18,7 @@ class FaceRecognitionPublisher(Node):
         self.known_face_names = []
 
         # Path to your known faces images
-        images_directory = '/home/kneely/Pictures'
+        images_directory = '/home/user/images/'
 
         # Load images and generate encodings
         self.load_known_faces(images_directory)
@@ -40,7 +40,9 @@ class FaceRecognitionPublisher(Node):
                 # Optional: Log the loaded names for verification
                 self.get_logger().info(f'Loaded {os.path.splitext(filename)[0]}')
 
-    def publish_identified_face(self):
+    def publish_identified_face(self, msg):
+        msg = RideMatch()
+
         ret, frame = self.video_capture.read()
         if ret:
             rgb_frame = frame[:, :, ::-1]
@@ -49,14 +51,16 @@ class FaceRecognitionPublisher(Node):
 
             for face_encoding in face_encodings:
                 matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                name = "Unknown"
 
                 face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
                 best_match_index = np.argmin(face_distances)
                 if matches[best_match_index]:
                     name = self.known_face_names[best_match_index]
-
-                self.publisher_.publish(String(data=name))
+                    msg.identified_face = name
+                    self.publisher_.publish(msg.identified_face)
+                    self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
+                else:
+                    self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
 
 def main(args=None):
     rclpy.init(args=args)

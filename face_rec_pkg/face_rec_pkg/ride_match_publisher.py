@@ -5,22 +5,22 @@ from rclpy.node import Node
 class RideMatchPublisher(Node):
     def __init__(self):
         super().__init__('ride_match_publisher')
-        self.publisher_ = self.create_publisher(RideMatch, 'ride_matches', 10)
         self.subscription = self.create_subscription(RideRequest, 'ride_requests', self.match_callback, 10)
         self.subscription = self.create_subscription(RideMatch, 'identified_faces', self.match_callback, 10)
 
     def request_callback(self, msg):
         msg = RideRequest()
-        self.ride_request_name = msg.first_name
-        self.publisher_.publish(msg)
-        self.get_logger().info(f'Verifying face with ride request from {msg.first_name}...')
+        self.first_name = msg.first_name
+        self.last_name = msg.last_name
+        self.get_logger().info(f'Ride requested by {self.first_name} {self.last_name} ...')
 
     def match_callback(self, msg):
         msg = RideMatch()
-        if self.ride_request_name and msg.identified_face.lower() == self.ride_request_name.lower():
-            self.get_logger().info(f'Match found! Initiating ride for {msg.identified_face}')
+        self.face_match = msg.identified_face
+        if self.first_name.lower() == self.face_match.lower():
+            self.get_logger().info(f'Confirmed! Initiating ride for {self.face_match}...')
         else:
-            self.get_logger().info(f'No match found for {msg.identified_face}')
+            self.get_logger().info(f'Sorry! Could not match {self.face_match} to any ride request ...')
 
 def main(args=None):
     rclpy.init(args=args)
