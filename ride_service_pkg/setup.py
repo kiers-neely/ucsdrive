@@ -18,7 +18,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='user',
+    maintainer='kneely',
     maintainer_email='kneely@ucsd.edu',
     description='TODO: Package description',
     license='TODO: License declaration',
