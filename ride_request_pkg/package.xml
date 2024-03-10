@@ -4,7 +4,7 @@
   <name>ride_request_pkg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="djnighti@ucsd.edu">root</maintainer>
+  <maintainer email="kneely@ucsd.edu">kneely</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>
