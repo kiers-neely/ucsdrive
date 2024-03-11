@@ -12,15 +12,15 @@ class RideMatchPublisher(Node):
         msg = RideRequest()
         self.first_name = msg.first_name
         self.last_name = msg.last_name
-        self.get_logger().info(f'Ride requested by {self.first_name} {self.last_name} ...')
+        self.get_logger().info(f'Ride requested by {msg.first_name} {msg.last_name} ...')
 
     def match_callback(self, msg):
         msg = RideMatch()
         self.face_match = msg.identified_face
         if self.first_name.lower() == self.face_match.lower():
-            self.get_logger().info(f'Confirmed! Initiating ride for {self.face_match}...')
+            self.get_logger().info(f'Confirmed! Initiating ride for {msg.identified_face}...')
         else:
-            self.get_logger().info(f'Sorry! Could not match {self.face_match} to any ride request ...')
+            self.get_logger().info(f'Sorry! Could not match {msg.identified_face} to any ride request ...')
 
 def main(args=None):
     rclpy.init(args=args)
