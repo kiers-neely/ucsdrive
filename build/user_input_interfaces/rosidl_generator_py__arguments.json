@@ -3,7 +3,8 @@
   "output_dir": "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_py/user_input_interfaces",
   "template_dir": "/opt/ros/iron/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl"
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl",
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideMatch.idl"
   ],
   "target_dependencies": [
     "/opt/ros/iron/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +20,7 @@
     "/opt/ros/iron/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/iron/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/iron/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideRequest.idl"
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideRequest.idl",
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideMatch.idl"
   ]
 }

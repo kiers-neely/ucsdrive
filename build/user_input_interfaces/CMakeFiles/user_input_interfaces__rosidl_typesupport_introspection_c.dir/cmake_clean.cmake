@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_match__type_support.c.o"
+  "CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_match__type_support.c.o.d"
   "CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_request__type_support.c.o"
   "CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_request__type_support.c.o.d"
   "libuser_input_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libuser_input_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_match__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_match__type_support.c"
   "rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_request__type_support.c"
 )

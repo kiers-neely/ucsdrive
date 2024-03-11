@@ -1,0 +1,27 @@
+[1.892s] Invoking command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/face_rec_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log --single-version-externally-managed
+[2.318s] running egg_info
+[2.319s] writing ../../build/face_rec_pkg/face_rec_pkg.egg-info/PKG-INFO
+[2.320s] writing dependency_links to ../../build/face_rec_pkg/face_rec_pkg.egg-info/dependency_links.txt
+[2.321s] writing entry points to ../../build/face_rec_pkg/face_rec_pkg.egg-info/entry_points.txt
+[2.322s] writing requirements to ../../build/face_rec_pkg/face_rec_pkg.egg-info/requires.txt
+[2.322s] writing top-level names to ../../build/face_rec_pkg/face_rec_pkg.egg-info/top_level.txt
+[2.327s] reading manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'
+[2.328s] writing manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'
+[2.329s] running build
+[2.329s] running build_py
+[2.329s] copying face_rec_pkg/face_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg
+[2.330s] running install
+[2.330s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.330s]   warnings.warn(
+[2.331s] running install_lib
+[2.333s] copying /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg/face_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg
+[2.335s] byte-compiling /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg/face_publisher.py to face_publisher.cpython-310.pyc
+[2.338s] running install_data
+[2.340s] running install_egg_info
+[2.345s] removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.346s] Copying ../../build/face_rec_pkg/face_rec_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info
+[2.349s] running install_scripts
+[2.394s] Installing face_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg
+[2.394s] Installing ride_match_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg
+[2.395s] writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log'
+[2.488s] Invoked command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg' returned '0': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/face_rec_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log --single-version-externally-managed

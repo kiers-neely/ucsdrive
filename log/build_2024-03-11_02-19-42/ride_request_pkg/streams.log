@@ -1,0 +1,23 @@
+[5.280s] Invoking command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/ride_request_pkg': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ride_request_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log --single-version-externally-managed
+[5.962s] running egg_info
+[5.964s] writing ../../build/ride_request_pkg/ride_request_pkg.egg-info/PKG-INFO
+[5.965s] writing dependency_links to ../../build/ride_request_pkg/ride_request_pkg.egg-info/dependency_links.txt
+[5.966s] writing entry points to ../../build/ride_request_pkg/ride_request_pkg.egg-info/entry_points.txt
+[5.966s] writing requirements to ../../build/ride_request_pkg/ride_request_pkg.egg-info/requires.txt
+[5.967s] writing top-level names to ../../build/ride_request_pkg/ride_request_pkg.egg-info/top_level.txt
+[5.973s] reading manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'
+[5.976s] writing manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'
+[5.976s] running build
+[5.977s] running build_py
+[5.978s] running install
+[5.978s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.978s]   warnings.warn(
+[5.978s] running install_lib
+[5.982s] running install_data
+[5.984s] running install_egg_info
+[5.989s] removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[5.990s] Copying ../../build/ride_request_pkg/ride_request_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg-0.0.0-py3.10.egg-info
+[5.995s] running install_scripts
+[6.068s] Installing ride_request script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/ride_request_pkg
+[6.069s] writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log'
+[6.295s] Invoked command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/ride_request_pkg' returned '0': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ride_request_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log --single-version-externally-managed

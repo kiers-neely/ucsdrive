@@ -67,6 +67,7 @@ include CMakeFiles/user_input_interfaces.dir/compiler_depend.make
 include CMakeFiles/user_input_interfaces.dir/progress.make
 
 CMakeFiles/user_input_interfaces: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces/msg/RideRequest.msg
+CMakeFiles/user_input_interfaces: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces/msg/RideMatch.msg
 
 user_input_interfaces: CMakeFiles/user_input_interfaces
 user_input_interfaces: CMakeFiles/user_input_interfaces.dir/build.make

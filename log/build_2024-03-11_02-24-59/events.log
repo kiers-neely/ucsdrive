@@ -1,0 +1,493 @@
+[0.000000] (-) TimerEvent: {}
+[0.001985] (user_input_interfaces) JobQueued: {'identifier': 'user_input_interfaces', 'dependencies': OrderedDict()}
+[0.002139] (face_rec_pkg) JobQueued: {'identifier': 'face_rec_pkg', 'dependencies': OrderedDict([('user_input_interfaces', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces')])}
+[0.002260] (ride_request_pkg) JobQueued: {'identifier': 'ride_request_pkg', 'dependencies': OrderedDict([('user_input_interfaces', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces')])}
+[0.002352] (user_input_interfaces) JobStarted: {'identifier': 'user_input_interfaces'}
+[0.099935] (-) TimerEvent: {}
+[0.171810] (user_input_interfaces) JobProgress: {'identifier': 'user_input_interfaces', 'progress': 'cmake'}
+[0.172530] (user_input_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kneely-ubuntu-22-04'), ('GIT_ASKPASS', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/kneely-ubuntu-22-04'), ('OLDPWD', '/home/kneely-ubuntu-22-04'), ('TERM_PROGRAM_VERSION', '1.87.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1fc53317-1efc-4660-9e7a-c0372f885145.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'kneely-ubuntu-22-04'), ('NAME', 'Kiers'), ('WSL_INTEROP', '/run/WSL/485_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('PATH', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cb7341c73a.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/opt/ros/iron'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.200288] (-) TimerEvent: {}
+[0.301301] (-) TimerEvent: {}
+[0.402165] (-) TimerEvent: {}
+[0.502990] (-) TimerEvent: {}
+[0.587447] (user_input_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.603292] (-) TimerEvent: {}
+[0.704370] (-) TimerEvent: {}
+[0.805341] (-) TimerEvent: {}
+[0.906390] (-) TimerEvent: {}
+[1.007229] (-) TimerEvent: {}
+[1.108135] (-) TimerEvent: {}
+[1.209074] (-) TimerEvent: {}
+[1.310066] (-) TimerEvent: {}
+[1.366876] (user_input_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.410360] (-) TimerEvent: {}
+[1.511303] (-) TimerEvent: {}
+[1.612149] (-) TimerEvent: {}
+[1.712906] (-) TimerEvent: {}
+[1.814188] (-) TimerEvent: {}
+[1.911662] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.914445] (-) TimerEvent: {}
+[2.015255] (-) TimerEvent: {}
+[2.116087] (-) TimerEvent: {}
+[2.141108] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.155645] (user_input_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.157596] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.159655] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.170660] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.216346] (-) TimerEvent: {}
+[2.317190] (-) TimerEvent: {}
+[2.418091] (-) TimerEvent: {}
+[2.423250] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.437813] (user_input_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.438631] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.439103] (user_input_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.449394] (user_input_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[2.518429] (-) TimerEvent: {}
+[2.619358] (-) TimerEvent: {}
+[2.720268] (-) TimerEvent: {}
+[2.821305] (user_input_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.821826] (-) TimerEvent: {}
+[2.922477] (-) TimerEvent: {}
+[3.023329] (-) TimerEvent: {}
+[3.110415] (user_input_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[3.123612] (-) TimerEvent: {}
+[3.126720] (user_input_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.223951] (-) TimerEvent: {}
+[3.324868] (-) TimerEvent: {}
+[3.425747] (-) TimerEvent: {}
+[3.458072] (user_input_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.526051] (-) TimerEvent: {}
+[3.592006] (user_input_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[3.626318] (-) TimerEvent: {}
+[3.727278] (-) TimerEvent: {}
+[3.828117] (-) TimerEvent: {}
+[3.929100] (-) TimerEvent: {}
+[4.030113] (-) TimerEvent: {}
+[4.130955] (-) TimerEvent: {}
+[4.213876] (user_input_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)\n'}
+[4.231355] (-) TimerEvent: {}
+[4.333064] (-) TimerEvent: {}
+[4.434451] (-) TimerEvent: {}
+[4.535523] (-) TimerEvent: {}
+[4.578772] (user_input_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.635804] (-) TimerEvent: {}
+[4.736550] (-) TimerEvent: {}
+[4.837538] (-) TimerEvent: {}
+[4.938306] (-) TimerEvent: {}
+[5.039272] (-) TimerEvent: {}
+[5.109306] (user_input_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.139516] (-) TimerEvent: {}
+[5.240501] (-) TimerEvent: {}
+[5.294131] (user_input_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.298922] (user_input_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)\n'}
+[5.340729] (-) TimerEvent: {}
+[5.441620] (-) TimerEvent: {}
+[5.542485] (-) TimerEvent: {}
+[5.643355] (-) TimerEvent: {}
+[5.744349] (-) TimerEvent: {}
+[5.789631] (user_input_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.790082] (user_input_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.790199] (user_input_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.790305] (user_input_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.825773] (user_input_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.844541] (-) TimerEvent: {}
+[5.938467] (user_input_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[5.944833] (-) TimerEvent: {}
+[6.035174] (user_input_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.042674] (user_input_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.045146] (-) TimerEvent: {}
+[6.048290] (user_input_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.057404] (user_input_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.145467] (-) TimerEvent: {}
+[6.150403] (user_input_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[6.155681] (user_input_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces\n'}
+[6.172534] (user_input_interfaces) CommandEnded: {'returncode': 0}
+[6.178396] (user_input_interfaces) JobProgress: {'identifier': 'user_input_interfaces', 'progress': 'build'}
+[6.179444] (user_input_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kneely-ubuntu-22-04'), ('GIT_ASKPASS', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/kneely-ubuntu-22-04'), ('OLDPWD', '/home/kneely-ubuntu-22-04'), ('TERM_PROGRAM_VERSION', '1.87.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1fc53317-1efc-4660-9e7a-c0372f885145.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'kneely-ubuntu-22-04'), ('NAME', 'Kiers'), ('WSL_INTEROP', '/run/WSL/485_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('PATH', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cb7341c73a.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/opt/ros/iron'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[6.245826] (-) TimerEvent: {}
+[6.252563] (user_input_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[6.268193] (user_input_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_user_input_interfaces\n'}
+[6.346173] (-) TimerEvent: {}
+[6.447016] (-) TimerEvent: {}
+[6.548194] (-) TimerEvent: {}
+[6.649131] (-) TimerEvent: {}
+[6.738703] (user_input_interfaces) StdoutLine: {'line': b'[  2%] Built target user_input_interfaces__rosidl_generator_type_description\n'}
+[6.749463] (-) TimerEvent: {}
+[6.756405] (user_input_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.779990] (user_input_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.813881] (user_input_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[6.816486] (user_input_interfaces) StdoutLine: {'line': b'creating user_input_interfaces.egg-info\n'}
+[6.818572] (user_input_interfaces) StdoutLine: {'line': b'writing user_input_interfaces.egg-info/PKG-INFO\n'}
+[6.819438] (user_input_interfaces) StdoutLine: {'line': b'writing dependency_links to user_input_interfaces.egg-info/dependency_links.txt\n'}
+[6.820497] (user_input_interfaces) StdoutLine: {'line': b'writing top-level names to user_input_interfaces.egg-info/top_level.txt\n'}
+[6.821438] (user_input_interfaces) StdoutLine: {'line': b"writing manifest file 'user_input_interfaces.egg-info/SOURCES.txt'\n"}
+[6.827158] (user_input_interfaces) StdoutLine: {'line': b"reading manifest file 'user_input_interfaces.egg-info/SOURCES.txt'\n"}
+[6.828259] (user_input_interfaces) StdoutLine: {'line': b"writing manifest file 'user_input_interfaces.egg-info/SOURCES.txt'\n"}
+[6.849710] (-) TimerEvent: {}
+[6.950636] (-) TimerEvent: {}
+[6.954491] (user_input_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_user_input_interfaces_egg\n'}
+[7.050852] (-) TimerEvent: {}
+[7.151962] (-) TimerEvent: {}
+[7.252803] (-) TimerEvent: {}
+[7.353759] (-) TimerEvent: {}
+[7.455065] (-) TimerEvent: {}
+[7.469071] (user_input_interfaces) StdoutLine: {'line': b'[  8%] Built target user_input_interfaces__cpp\n'}
+[7.555339] (-) TimerEvent: {}
+[7.567105] (user_input_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_input_interfaces/msg/detail/ride_request__type_support.c.o\x1b[0m\n'}
+[7.568774] (user_input_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_input_interfaces/msg/detail/ride_request__functions.c.o\x1b[0m\n'}
+[7.569900] (user_input_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_input_interfaces/msg/detail/ride_request__description.c.o\x1b[0m\n'}
+[7.655656] (-) TimerEvent: {}
+[7.756981] (-) TimerEvent: {}
+[7.780181] (user_input_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libuser_input_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[7.857259] (-) TimerEvent: {}
+[7.942312] (user_input_interfaces) StdoutLine: {'line': b'[ 20%] Built target user_input_interfaces__rosidl_generator_c\n'}
+[7.957841] (-) TimerEvent: {}
+[7.963175] (user_input_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.963776] (user_input_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.964008] (user_input_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.964932] (user_input_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.965584] (user_input_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.966161] (user_input_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.058282] (-) TimerEvent: {}
+[8.159114] (-) TimerEvent: {}
+[8.260286] (-) TimerEvent: {}
+[8.361289] (-) TimerEvent: {}
+[8.462153] (-) TimerEvent: {}
+[8.563010] (-) TimerEvent: {}
+[8.670108] (-) TimerEvent: {}
+[8.771156] (-) TimerEvent: {}
+[8.872073] (-) TimerEvent: {}
+[8.972885] (-) TimerEvent: {}
+[9.074376] (-) TimerEvent: {}
+[9.179034] (-) TimerEvent: {}
+[9.285553] (-) TimerEvent: {}
+[9.349885] (user_input_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_input_interfaces/msg/ride_request__type_support.cpp.o\x1b[0m\n'}
+[9.378139] (user_input_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_input_interfaces/msg/ride_request__type_support.cpp.o\x1b[0m\n'}
+[9.390171] (-) TimerEvent: {}
+[9.441949] (user_input_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_input_interfaces/msg/detail/ride_request__type_support.cpp.o\x1b[0m\n'}
+[9.477214] (user_input_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_input_interfaces/msg/detail/ride_request__type_support.c.o\x1b[0m\n'}
+[9.486920] (user_input_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_input_interfaces/msg/detail/ride_request__type_support_c.cpp.o\x1b[0m\n'}
+[9.490426] (-) TimerEvent: {}
+[9.551526] (user_input_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o\x1b[0m\n'}
+[9.590721] (-) TimerEvent: {}
+[9.596615] (user_input_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libuser_input_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.645447] (user_input_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libuser_input_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.690998] (-) TimerEvent: {}
+[9.792074] (-) TimerEvent: {}
+[9.893034] (-) TimerEvent: {}
+[9.994336] (-) TimerEvent: {}
+[10.023128] (user_input_interfaces) StdoutLine: {'line': b'[ 61%] Built target user_input_interfaces__rosidl_typesupport_introspection_c\n'}
+[10.039257] (user_input_interfaces) StdoutLine: {'line': b'[ 61%] Built target user_input_interfaces__rosidl_typesupport_c\n'}
+[10.094746] (-) TimerEvent: {}
+[10.195933] (-) TimerEvent: {}
+[10.301513] (-) TimerEvent: {}
+[10.402623] (-) TimerEvent: {}
+[10.503544] (-) TimerEvent: {}
+[10.604465] (-) TimerEvent: {}
+[10.705432] (-) TimerEvent: {}
+[10.769572] (user_input_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libuser_input_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.805736] (-) TimerEvent: {}
+[10.859978] (user_input_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libuser_input_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.875307] (user_input_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libuser_input_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.905995] (-) TimerEvent: {}
+[11.007125] (-) TimerEvent: {}
+[11.108255] (-) TimerEvent: {}
+[11.113872] (user_input_interfaces) StdoutLine: {'line': b'[ 70%] Built target user_input_interfaces__rosidl_typesupport_cpp\n'}
+[11.203453] (user_input_interfaces) StdoutLine: {'line': b'[ 70%] Built target user_input_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[11.208533] (-) TimerEvent: {}
+[11.284032] (user_input_interfaces) StdoutLine: {'line': b'[ 70%] Built target user_input_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[11.309219] (-) TimerEvent: {}
+[11.336559] (user_input_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.409460] (-) TimerEvent: {}
+[11.510222] (-) TimerEvent: {}
+[11.611190] (-) TimerEvent: {}
+[11.615480] (user_input_interfaces) StdoutLine: {'line': b'[ 73%] Built target user_input_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[11.649968] (user_input_interfaces) StdoutLine: {'line': b'[ 73%] Built target user_input_interfaces\n'}
+[11.682130] (user_input_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.711537] (-) TimerEvent: {}
+[11.812305] (-) TimerEvent: {}
+[11.913090] (-) TimerEvent: {}
+[12.013906] (-) TimerEvent: {}
+[12.114819] (-) TimerEvent: {}
+[12.215739] (-) TimerEvent: {}
+[12.235543] (user_input_interfaces) StdoutLine: {'line': b'[ 76%] Built target user_input_interfaces__py\n'}
+[12.268836] (user_input_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_input_interfaces/msg/_ride_request_s.c.o\x1b[0m\n'}
+[12.316023] (-) TimerEvent: {}
+[12.416865] (-) TimerEvent: {}
+[12.517766] (-) TimerEvent: {}
+[12.599435] (user_input_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/user_input_interfaces/libuser_input_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[12.618211] (-) TimerEvent: {}
+[12.719046] (-) TimerEvent: {}
+[12.764942] (user_input_interfaces) StdoutLine: {'line': b'[ 82%] Built target user_input_interfaces__rosidl_generator_py\n'}
+[12.797517] (user_input_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.798151] (user_input_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.798372] (user_input_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/user_input_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.819403] (-) TimerEvent: {}
+[12.920233] (-) TimerEvent: {}
+[12.963817] (user_input_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.992124] (user_input_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.001715] (user_input_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[13.020471] (-) TimerEvent: {}
+[13.087119] (user_input_interfaces) StdoutLine: {'line': b'[100%] Built target user_input_interfaces__rosidl_typesupport_c__pyext\n'}
+[13.120865] (-) TimerEvent: {}
+[13.127935] (user_input_interfaces) StdoutLine: {'line': b'[100%] Built target user_input_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.132218] (user_input_interfaces) StdoutLine: {'line': b'[100%] Built target user_input_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[13.160574] (user_input_interfaces) CommandEnded: {'returncode': 0}
+[13.221091] (-) TimerEvent: {}
+[13.308756] (user_input_interfaces) JobProgress: {'identifier': 'user_input_interfaces', 'progress': 'install'}
+[13.321434] (-) TimerEvent: {}
+[13.326374] (user_input_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kneely-ubuntu-22-04'), ('GIT_ASKPASS', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/kneely-ubuntu-22-04'), ('OLDPWD', '/home/kneely-ubuntu-22-04'), ('TERM_PROGRAM_VERSION', '1.87.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1fc53317-1efc-4660-9e7a-c0372f885145.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'kneely-ubuntu-22-04'), ('NAME', 'Kiers'), ('WSL_INTEROP', '/run/WSL/485_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('PATH', '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cb7341c73a.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '4'), ('AMENT_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/opt/ros/iron'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[13.339593] (user_input_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.340386] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/ament_index/resource_index/rosidl_interfaces/user_input_interfaces\n'}
+[13.340835] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/msg/RideRequest.json\n'}
+[13.341528] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.342132] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.343075] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/ride_request.h\n'}
+[13.343600] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.344087] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__struct.h\n'}
+[13.344686] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__functions.c\n'}
+[13.345720] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__type_support.c\n'}
+[13.346054] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__description.c\n'}
+[13.346321] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__type_support.h\n'}
+[13.346795] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__functions.h\n'}
+[13.347051] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.347251] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/library_path.sh\n'}
+[13.347436] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/library_path.dsv\n'}
+[13.347960] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_generator_c.so\n'}
+[13.348979] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_generator_c.so" to ""\n'}
+[13.350231] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.350962] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.351647] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.352237] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.352669] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_fastrtps_c.h\n'}
+[13.353052] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[13.353811] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.354595] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.354882] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.355128] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.355265] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.355371] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__type_support.c\n'}
+[13.355545] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_introspection_c.h\n'}
+[13.355664] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[13.355794] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.356292] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_c.so\n'}
+[13.357391] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[13.357932] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.358657] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.359200] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.359853] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__builder.hpp\n'}
+[13.360621] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__struct.hpp\n'}
+[13.361591] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__traits.hpp\n'}
+[13.362218] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/ride_request.hpp\n'}
+[13.362720] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.363447] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.364753] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.365240] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.365621] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.366036] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/dds_fastrtps\n'}
+[13.366422] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.367039] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.367636] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces\n'}
+[13.368099] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg\n'}
+[13.368497] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail\n'}
+[13.368667] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.368785] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/include/user_input_interfaces/user_input_interfaces/msg/detail/ride_request__type_support.cpp\n'}
+[13.369150] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[13.369603] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.370012] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_cpp.so\n'}
+[13.370529] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[13.370882] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/pythonpath.sh\n'}
+[13.371242] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/pythonpath.dsv\n'}
+[13.371584] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces-0.0.0-py3.10.egg-info\n'}
+[13.371974] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[13.372302] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[13.372724] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[13.372846] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[13.372998] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces\n'}
+[13.373175] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.374390] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.374812] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/__init__.py\n'}
+[13.374947] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg\n'}
+[13.375058] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg/__init__.py\n'}
+[13.375177] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg/_ride_request_s.c\n'}
+[13.375367] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg/_ride_request.py\n'}
+[13.375492] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/libuser_input_interfaces__rosidl_generator_py.so\n'}
+[13.375600] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.375704] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.375807] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[13.375906] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/_user_input_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.421687] (-) TimerEvent: {}
+[13.452521] (user_input_interfaces) StdoutLine: {'line': b"Listing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces'...\n"}
+[13.453153] (user_input_interfaces) StdoutLine: {'line': b"Compiling '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/__init__.py'...\n"}
+[13.453298] (user_input_interfaces) StdoutLine: {'line': b"Listing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg'...\n"}
+[13.453411] (user_input_interfaces) StdoutLine: {'line': b"Compiling '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg/__init__.py'...\n"}
+[13.453522] (user_input_interfaces) StdoutLine: {'line': b"Compiling '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/msg/_ride_request.py'...\n"}
+[13.483406] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.484323] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.485579] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.486430] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.487346] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.488482] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages/user_input_interfaces/user_input_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.488876] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_generator_py.so\n'}
+[13.489276] (user_input_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/libuser_input_interfaces__rosidl_generator_py.so" to ""\n'}
+[13.489763] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/msg/RideRequest.idl\n'}
+[13.490840] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/msg/RideRequest.msg\n'}
+[13.491720] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/ament_index/resource_index/package_run_dependencies/user_input_interfaces\n'}
+[13.493135] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/ament_index/resource_index/parent_prefix_path/user_input_interfaces\n'}
+[13.494542] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/ament_prefix_path.sh\n'}
+[13.495441] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/ament_prefix_path.dsv\n'}
+[13.496144] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/path.sh\n'}
+[13.497069] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/environment/path.dsv\n'}
+[13.498402] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/local_setup.bash\n'}
+[13.499325] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/local_setup.sh\n'}
+[13.500378] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/local_setup.zsh\n'}
+[13.501098] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/local_setup.dsv\n'}
+[13.501612] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.dsv\n'}
+[13.502133] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/ament_index/resource_index/packages/user_input_interfaces\n'}
+[13.502651] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_generator_cExport.cmake\n'}
+[13.503602] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.504606] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.505456] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.506028] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.506632] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.507201] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[13.508141] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.509073] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_generator_cppExport.cmake\n'}
+[13.509851] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.510761] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.511861] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.512348] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.513211] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[13.513813] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.514712] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_generator_pyExport.cmake\n'}
+[13.515261] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/export_user_input_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.515663] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[13.516026] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.516385] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.517039] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.517213] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.517346] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.517467] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.517578] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfacesConfig.cmake\n'}
+[13.517954] (user_input_interfaces) StdoutLine: {'line': b'-- Installing: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/cmake/user_input_interfacesConfig-version.cmake\n'}
+[13.518644] (user_input_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.xml\n'}
+[13.521963] (-) TimerEvent: {}
+[13.526569] (user_input_interfaces) CommandEnded: {'returncode': 0}
+[13.623228] (-) TimerEvent: {}
+[13.726120] (-) TimerEvent: {}
+[13.830777] (-) TimerEvent: {}
+[13.933278] (-) TimerEvent: {}
+[14.035538] (-) TimerEvent: {}
+[14.112234] (user_input_interfaces) JobEnded: {'identifier': 'user_input_interfaces', 'rc': 0}
+[14.117005] (face_rec_pkg) JobStarted: {'identifier': 'face_rec_pkg'}
+[14.136015] (-) TimerEvent: {}
+[14.240546] (-) TimerEvent: {}
+[14.341866] (-) TimerEvent: {}
+[14.383864] (ride_request_pkg) JobStarted: {'identifier': 'ride_request_pkg'}
+[14.442790] (-) TimerEvent: {}
+[14.545418] (-) TimerEvent: {}
+[14.648461] (-) TimerEvent: {}
+[14.752007] (-) TimerEvent: {}
+[14.856738] (-) TimerEvent: {}
+[14.957606] (-) TimerEvent: {}
+[15.058478] (-) TimerEvent: {}
+[15.159568] (-) TimerEvent: {}
+[15.260552] (-) TimerEvent: {}
+[15.361444] (-) TimerEvent: {}
+[15.462595] (-) TimerEvent: {}
+[15.563599] (-) TimerEvent: {}
+[15.664690] (-) TimerEvent: {}
+[15.765780] (-) TimerEvent: {}
+[15.869178] (-) TimerEvent: {}
+[15.970045] (-) TimerEvent: {}
+[16.070896] (-) TimerEvent: {}
+[16.171932] (-) TimerEvent: {}
+[16.273069] (-) TimerEvent: {}
+[16.373934] (-) TimerEvent: {}
+[16.474707] (-) TimerEvent: {}
+[16.575544] (-) TimerEvent: {}
+[16.676332] (-) TimerEvent: {}
+[16.780895] (-) TimerEvent: {}
+[16.881720] (-) TimerEvent: {}
+[16.982638] (-) TimerEvent: {}
+[17.084082] (-) TimerEvent: {}
+[17.184937] (-) TimerEvent: {}
+[17.285678] (-) TimerEvent: {}
+[17.386512] (-) TimerEvent: {}
+[17.487363] (-) TimerEvent: {}
+[17.588148] (-) TimerEvent: {}
+[17.590925] (face_rec_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/face_rec_pkg', 'build', '--build-base', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build', 'install', '--record', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kneely-ubuntu-22-04', 'GIT_ASKPASS': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/kneely-ubuntu-22-04', 'OLDPWD': '/home/kneely-ubuntu-22-04', 'TERM_PROGRAM_VERSION': '1.87.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-1fc53317-1efc-4660-9e7a-c0372f885145.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'kneely-ubuntu-22-04', 'NAME': 'Kiers', 'WSL_INTEROP': '/run/WSL/485_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb7341c73a.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[17.688411] (-) TimerEvent: {}
+[17.770350] (ride_request_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/ride_request_pkg', 'build', '--build-base', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build', 'install', '--record', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/ride_request_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kneely-ubuntu-22-04', 'GIT_ASKPASS': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/kneely-ubuntu-22-04', 'OLDPWD': '/home/kneely-ubuntu-22-04', 'TERM_PROGRAM_VERSION': '1.87.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-1fc53317-1efc-4660-9e7a-c0372f885145.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'kneely-ubuntu-22-04', 'NAME': 'Kiers', 'WSL_INTEROP': '/run/WSL/485_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb7341c73a.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[17.788734] (-) TimerEvent: {}
+[17.889670] (-) TimerEvent: {}
+[17.990501] (-) TimerEvent: {}
+[18.091342] (-) TimerEvent: {}
+[18.160353] (face_rec_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[18.161677] (face_rec_pkg) StdoutLine: {'line': b'creating ../../build/face_rec_pkg/face_rec_pkg.egg-info\n'}
+[18.162753] (face_rec_pkg) StdoutLine: {'line': b'writing ../../build/face_rec_pkg/face_rec_pkg.egg-info/PKG-INFO\n'}
+[18.163408] (face_rec_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/face_rec_pkg/face_rec_pkg.egg-info/dependency_links.txt\n'}
+[18.164610] (face_rec_pkg) StdoutLine: {'line': b'writing entry points to ../../build/face_rec_pkg/face_rec_pkg.egg-info/entry_points.txt\n'}
+[18.165027] (face_rec_pkg) StdoutLine: {'line': b'writing requirements to ../../build/face_rec_pkg/face_rec_pkg.egg-info/requires.txt\n'}
+[18.165485] (face_rec_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/face_rec_pkg/face_rec_pkg.egg-info/top_level.txt\n'}
+[18.166183] (face_rec_pkg) StdoutLine: {'line': b"writing manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'\n"}
+[18.169400] (face_rec_pkg) StdoutLine: {'line': b"reading manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'\n"}
+[18.170878] (face_rec_pkg) StdoutLine: {'line': b"writing manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'\n"}
+[18.171599] (face_rec_pkg) StdoutLine: {'line': b'running build\n'}
+[18.171963] (face_rec_pkg) StdoutLine: {'line': b'running build_py\n'}
+[18.172093] (face_rec_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build\n'}
+[18.172582] (face_rec_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib\n'}
+[18.173099] (face_rec_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg\n'}
+[18.173766] (face_rec_pkg) StdoutLine: {'line': b'copying face_rec_pkg/ride_match_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg\n'}
+[18.174588] (face_rec_pkg) StdoutLine: {'line': b'copying face_rec_pkg/__init__.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg\n'}
+[18.175049] (face_rec_pkg) StdoutLine: {'line': b'copying face_rec_pkg/face_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg\n'}
+[18.175423] (face_rec_pkg) StdoutLine: {'line': b'running install\n'}
+[18.175853] (face_rec_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.176281] (face_rec_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[18.176419] (face_rec_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[18.178641] (face_rec_pkg) StdoutLine: {'line': b'running install_data\n'}
+[18.180111] (face_rec_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.183924] (face_rec_pkg) StdoutLine: {'line': b"removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[18.184802] (face_rec_pkg) StdoutLine: {'line': b'Copying ../../build/face_rec_pkg/face_rec_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info\n'}
+[18.186723] (face_rec_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[18.191639] (-) TimerEvent: {}
+[18.237466] (face_rec_pkg) StdoutLine: {'line': b'Installing face_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg\n'}
+[18.238128] (face_rec_pkg) StdoutLine: {'line': b'Installing ride_match_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg\n'}
+[18.239766] (face_rec_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log'\n"}
+[18.284573] (ride_request_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[18.287267] (ride_request_pkg) StdoutLine: {'line': b'creating ../../build/ride_request_pkg/ride_request_pkg.egg-info\n'}
+[18.289441] (ride_request_pkg) StdoutLine: {'line': b'writing ../../build/ride_request_pkg/ride_request_pkg.egg-info/PKG-INFO\n'}
+[18.291070] (ride_request_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/ride_request_pkg/ride_request_pkg.egg-info/dependency_links.txt\n'}
+[18.291686] (-) TimerEvent: {}
+[18.292579] (ride_request_pkg) StdoutLine: {'line': b'writing entry points to ../../build/ride_request_pkg/ride_request_pkg.egg-info/entry_points.txt\n'}
+[18.293128] (ride_request_pkg) StdoutLine: {'line': b'writing requirements to ../../build/ride_request_pkg/ride_request_pkg.egg-info/requires.txt\n'}
+[18.293339] (ride_request_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/ride_request_pkg/ride_request_pkg.egg-info/top_level.txt\n'}
+[18.293467] (ride_request_pkg) StdoutLine: {'line': b"writing manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'\n"}
+[18.299290] (ride_request_pkg) StdoutLine: {'line': b"reading manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'\n"}
+[18.301153] (ride_request_pkg) StdoutLine: {'line': b"writing manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'\n"}
+[18.302319] (ride_request_pkg) StdoutLine: {'line': b'running build\n'}
+[18.302734] (ride_request_pkg) StdoutLine: {'line': b'running build_py\n'}
+[18.303741] (ride_request_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build\n'}
+[18.305036] (ride_request_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib\n'}
+[18.306914] (ride_request_pkg) StdoutLine: {'line': b'creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib/ride_request_pkg\n'}
+[18.308983] (ride_request_pkg) StdoutLine: {'line': b'copying ride_request_pkg/ride_request_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib/ride_request_pkg\n'}
+[18.309835] (ride_request_pkg) StdoutLine: {'line': b'copying ride_request_pkg/__init__.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib/ride_request_pkg\n'}
+[18.311703] (ride_request_pkg) StdoutLine: {'line': b'running install\n'}
+[18.312813] (ride_request_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.314400] (ride_request_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[18.315899] (ride_request_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[18.323437] (ride_request_pkg) StdoutLine: {'line': b'running install_data\n'}
+[18.326212] (ride_request_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.335610] (ride_request_pkg) StdoutLine: {'line': b"removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[18.336763] (ride_request_pkg) StdoutLine: {'line': b'Copying ../../build/ride_request_pkg/ride_request_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg-0.0.0-py3.10.egg-info\n'}
+[18.340165] (ride_request_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[18.365444] (face_rec_pkg) CommandEnded: {'returncode': 0}
+[18.391009] (ride_request_pkg) StdoutLine: {'line': b'Installing ride_request script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/ride_request_pkg\n'}
+[18.391756] (-) TimerEvent: {}
+[18.393690] (ride_request_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log'\n"}
+[18.494755] (-) TimerEvent: {}
+[18.505342] (face_rec_pkg) JobEnded: {'identifier': 'face_rec_pkg', 'rc': 0}
+[18.513628] (ride_request_pkg) CommandEnded: {'returncode': 0}
+[18.597802] (-) TimerEvent: {}
+[18.639345] (ride_request_pkg) JobEnded: {'identifier': 'ride_request_pkg', 'rc': 0}
+[18.642681] (-) EventReactorShutdown: {}

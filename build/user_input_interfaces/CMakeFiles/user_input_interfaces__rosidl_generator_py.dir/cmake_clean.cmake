@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/user_input_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_input_interfaces/msg/_ride_match_s.c.o"
+  "CMakeFiles/user_input_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_input_interfaces/msg/_ride_match_s.c.o.d"
   "CMakeFiles/user_input_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_input_interfaces/msg/_ride_request_s.c.o"
   "CMakeFiles/user_input_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_input_interfaces/msg/_ride_request_s.c.o.d"
   "rosidl_generator_py/user_input_interfaces/libuser_input_interfaces__rosidl_generator_py.pdb"

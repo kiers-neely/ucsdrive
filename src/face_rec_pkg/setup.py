@@ -24,4 +24,4 @@ setup(
               'ride_match_publisher = face_rec_pkg.ride_match_publisher:main',
         ],
     },
-)
+) 

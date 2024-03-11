@@ -3,7 +3,8 @@
   "output_dir": "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_cpp/user_input_interfaces",
   "template_dir": "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl"
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl",
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideMatch.idl"
   ],
   "target_dependencies": [
     "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,9 +22,11 @@
     "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/iron/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideRequest.idl"
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideRequest.idl",
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideMatch.idl"
   ],
   "type_description_tuples": [
-    "msg/RideRequest.idl:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json"
+    "msg/RideRequest.idl:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json",
+    "msg/RideMatch.idl:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_type_description/user_input_interfaces/msg/RideMatch.json"
   ]
 }

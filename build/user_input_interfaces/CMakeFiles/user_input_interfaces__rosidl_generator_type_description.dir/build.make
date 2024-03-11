@@ -67,14 +67,20 @@ include CMakeFiles/user_input_interfaces__rosidl_generator_type_description.dir/
 include CMakeFiles/user_input_interfaces__rosidl_generator_type_description.dir/progress.make
 
 CMakeFiles/user_input_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json
+CMakeFiles/user_input_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_input_interfaces/msg/RideMatch.json
 
 rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json: /opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json: rosidl_adapter/user_input_interfaces/msg/RideRequest.idl
+rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json: rosidl_adapter/user_input_interfaces/msg/RideMatch.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_type_description__arguments.json
 
+rosidl_generator_type_description/user_input_interfaces/msg/RideMatch.json: rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/user_input_interfaces/msg/RideMatch.json
+
 user_input_interfaces__rosidl_generator_type_description: CMakeFiles/user_input_interfaces__rosidl_generator_type_description
+user_input_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_input_interfaces/msg/RideMatch.json
 user_input_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_input_interfaces/msg/RideRequest.json
 user_input_interfaces__rosidl_generator_type_description: CMakeFiles/user_input_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : user_input_interfaces__rosidl_generator_type_description

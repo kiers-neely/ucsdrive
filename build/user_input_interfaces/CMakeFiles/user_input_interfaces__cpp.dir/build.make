@@ -70,6 +70,10 @@ CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interface
 CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__builder.hpp
 CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__struct.hpp
 CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__traits.hpp
+CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_match.hpp
+CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__builder.hpp
+CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__struct.hpp
+CMakeFiles/user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__traits.hpp
 
 rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: /opt/ros/iron/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: /opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: /opt/ros/iron/s
 rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: /opt/ros/iron/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: /opt/ros/iron/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: rosidl_adapter/user_input_interfaces/msg/RideRequest.idl
+rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp: rosidl_adapter/user_input_interfaces/msg/RideMatch.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/iron/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -99,10 +104,26 @@ rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__struct.hpp: 
 rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__traits.hpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__traits.hpp
 
+rosidl_generator_cpp/user_input_interfaces/msg/ride_match.hpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_input_interfaces/msg/ride_match.hpp
+
+rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__builder.hpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__builder.hpp
+
+rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__struct.hpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__struct.hpp
+
+rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__traits.hpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__traits.hpp
+
 user_input_interfaces__cpp: CMakeFiles/user_input_interfaces__cpp
+user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__builder.hpp
+user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__struct.hpp
+user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_match__traits.hpp
 user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__builder.hpp
 user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__struct.hpp
 user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/detail/ride_request__traits.hpp
+user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_match.hpp
 user_input_interfaces__cpp: rosidl_generator_cpp/user_input_interfaces/msg/ride_request.hpp
 user_input_interfaces__cpp: CMakeFiles/user_input_interfaces__cpp.dir/build.make
 .PHONY : user_input_interfaces__cpp

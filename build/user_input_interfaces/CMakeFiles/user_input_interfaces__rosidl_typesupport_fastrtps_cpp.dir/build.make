@@ -78,11 +78,18 @@ rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ri
 rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp: /opt/ros/iron/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em
 rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp: /opt/ros/iron/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp: rosidl_adapter/user_input_interfaces/msg/RideRequest.idl
+rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp: rosidl_adapter/user_input_interfaces/msg/RideMatch.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
 	/usr/bin/python3.10 /opt/ros/iron/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp --generator-arguments-file /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_fastrtps_cpp__arguments.json
 
 rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_match__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_match__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp
@@ -98,14 +105,30 @@ CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typ
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp -o CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.s
 
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o -MF CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o.d -o CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o -c /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp
+
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp > CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.i
+
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp -o CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.s
+
 # Object files for target user_input_interfaces__rosidl_typesupport_fastrtps_cpp
 user_input_interfaces__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
-"CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o"
+"CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o" \
+"CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o"
 
 # External object files for target user_input_interfaces__rosidl_typesupport_fastrtps_cpp
 user_input_interfaces__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp.o
+libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp.o
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/iron/lib/librosidl_typesupport_fastrtps_cpp.so
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: libuser_input_interfaces__rosidl_generator_c.so
@@ -115,7 +138,7 @@ libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/iron/lib/
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/iron/lib/librosidl_runtime_c.so
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/iron/lib/librcutils.so
 libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libuser_input_interfaces__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +149,9 @@ CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/clean
 
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_match__type_support.cpp
 CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/dds_fastrtps/ride_request__type_support.cpp
+CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_match__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/user_input_interfaces/msg/detail/ride_request__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/user_input_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend

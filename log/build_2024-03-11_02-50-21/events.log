@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.001920] (-) JobUnselected: {'identifier': 'ride_request_pkg'}
+[0.002073] (-) JobUnselected: {'identifier': 'user_input_interfaces'}
+[0.002171] (face_rec_pkg) JobQueued: {'identifier': 'face_rec_pkg', 'dependencies': OrderedDict([('user_input_interfaces', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces')])}
+[0.002280] (face_rec_pkg) JobStarted: {'identifier': 'face_rec_pkg'}
+[0.098785] (-) TimerEvent: {}
+[0.200854] (-) TimerEvent: {}
+[0.302805] (-) TimerEvent: {}
+[0.403692] (-) TimerEvent: {}
+[0.505034] (-) TimerEvent: {}
+[0.605829] (-) TimerEvent: {}
+[0.707156] (-) TimerEvent: {}
+[0.808233] (-) TimerEvent: {}
+[0.909707] (-) TimerEvent: {}
+[1.012109] (-) TimerEvent: {}
+[1.113025] (-) TimerEvent: {}
+[1.213898] (-) TimerEvent: {}
+[1.317361] (-) TimerEvent: {}
+[1.418225] (-) TimerEvent: {}
+[1.519048] (-) TimerEvent: {}
+[1.619996] (-) TimerEvent: {}
+[1.721247] (-) TimerEvent: {}
+[1.821987] (-) TimerEvent: {}
+[1.922803] (-) TimerEvent: {}
+[1.965870] (face_rec_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/face_rec_pkg', 'build', '--build-base', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build', 'install', '--record', '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kneely-ubuntu-22-04', 'GIT_ASKPASS': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/kneely-ubuntu-22-04', 'TERM_PROGRAM_VERSION': '1.87.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b1fc15a1-934a-4012-bb30-3d39641710c9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'kneely-ubuntu-22-04', 'NAME': 'Kiers', 'WSL_INTEROP': '/run/WSL/485_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/kneely-ubuntu-22-04/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/bin/remote-cli:/home/kneely-ubuntu-22-04/.local/bin:/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/kiers/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kiers/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/kiers/AppData/Local/GitHubDesktop/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb7341c73a.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '4', 'AMENT_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces:/opt/ros/iron', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[2.023364] (-) TimerEvent: {}
+[2.124464] (-) TimerEvent: {}
+[2.225508] (-) TimerEvent: {}
+[2.326569] (-) TimerEvent: {}
+[2.427505] (face_rec_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[2.428062] (-) TimerEvent: {}
+[2.429317] (face_rec_pkg) StdoutLine: {'line': b'writing ../../build/face_rec_pkg/face_rec_pkg.egg-info/PKG-INFO\n'}
+[2.429869] (face_rec_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/face_rec_pkg/face_rec_pkg.egg-info/dependency_links.txt\n'}
+[2.430629] (face_rec_pkg) StdoutLine: {'line': b'writing entry points to ../../build/face_rec_pkg/face_rec_pkg.egg-info/entry_points.txt\n'}
+[2.431210] (face_rec_pkg) StdoutLine: {'line': b'writing requirements to ../../build/face_rec_pkg/face_rec_pkg.egg-info/requires.txt\n'}
+[2.431404] (face_rec_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/face_rec_pkg/face_rec_pkg.egg-info/top_level.txt\n'}
+[2.435732] (face_rec_pkg) StdoutLine: {'line': b"reading manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'\n"}
+[2.437933] (face_rec_pkg) StdoutLine: {'line': b"writing manifest file '../../build/face_rec_pkg/face_rec_pkg.egg-info/SOURCES.txt'\n"}
+[2.438720] (face_rec_pkg) StdoutLine: {'line': b'running build\n'}
+[2.439048] (face_rec_pkg) StdoutLine: {'line': b'running build_py\n'}
+[2.439824] (face_rec_pkg) StdoutLine: {'line': b'copying face_rec_pkg/face_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg\n'}
+[2.440625] (face_rec_pkg) StdoutLine: {'line': b'running install\n'}
+[2.441095] (face_rec_pkg) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.441283] (face_rec_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.441973] (face_rec_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[2.444758] (face_rec_pkg) StdoutLine: {'line': b'copying /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/build/lib/face_rec_pkg/face_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg\n'}
+[2.446685] (face_rec_pkg) StdoutLine: {'line': b'byte-compiling /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg/face_publisher.py to face_publisher.cpython-310.pyc\n'}
+[2.449304] (face_rec_pkg) StdoutLine: {'line': b'running install_data\n'}
+[2.450971] (face_rec_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.455657] (face_rec_pkg) StdoutLine: {'line': b"removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.456539] (face_rec_pkg) StdoutLine: {'line': b'Copying ../../build/face_rec_pkg/face_rec_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages/face_rec_pkg-0.0.0-py3.10.egg-info\n'}
+[2.461366] (face_rec_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[2.503494] (face_rec_pkg) StdoutLine: {'line': b'Installing face_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg\n'}
+[2.503846] (face_rec_pkg) StdoutLine: {'line': b'Installing ride_match_publisher script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/face_rec_pkg\n'}
+[2.504303] (face_rec_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg/install.log'\n"}
+[2.528441] (-) TimerEvent: {}
+[2.589160] (face_rec_pkg) CommandEnded: {'returncode': 0}
+[2.629744] (-) TimerEvent: {}
+[2.707476] (face_rec_pkg) JobEnded: {'identifier': 'face_rec_pkg', 'rc': 0}
+[2.710964] (-) EventReactorShutdown: {}

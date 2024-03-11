@@ -1,4 +1,0 @@
-[console_scripts]
-ride_request_client = ride_service_pkg.ride_request_client:main
-ride_request_server = ride_service_pkg.ride_request_server:main
-

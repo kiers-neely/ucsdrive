@@ -16,15 +16,19 @@ class FaceRecognitionPublisher(Node):
         # Initialize face encodings and names
         self.known_face_encodings = []
         self.known_face_names = []
+        self.face_locations = []
+        self.face_encodings = []
+        self.face_names = []
+
 
         # Path to your known faces images
-        images_directory = '/home/user/images/'
+        images_directory = 'src/known_faces' 
 
         # Load images and generate encodings
         self.load_known_faces(images_directory)
 
-        # Video capture
         self.video_capture = cv2.VideoCapture(0)
+
 
     def load_known_faces(self, images_directory):
         for filename in os.listdir(images_directory):
@@ -40,27 +44,56 @@ class FaceRecognitionPublisher(Node):
                 # Optional: Log the loaded names for verification
                 self.get_logger().info(f'Loaded {os.path.splitext(filename)[0]}')
 
-    def publish_identified_face(self, msg):
+    def publish_identified_face(self):
         msg = RideMatch()
+        self.get_logger().info('Looking for faces...')
 
-        ret, frame = self.video_capture.read()
-        if ret:
-            rgb_frame = frame[:, :, ::-1]
-            face_locations = face_recognition.face_locations(rgb_frame)
-            face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
+        process_this_frame = True
 
-            for face_encoding in face_encodings:
-                matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
+        while True:
+            ret, frame = self.video_capture.read()
 
-                face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
-                best_match_index = np.argmin(face_distances)
-                if matches[best_match_index]:
-                    name = self.known_face_names[best_match_index]
-                    msg.identified_face = name
-                    self.publisher_.publish(msg.identified_face)
-                    self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
-                else:
-                    self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
+            if ret:
+                frame_array = np.array(frame)
+                rgb_frame = frame_array[:, :, ::-1]
+                self.face_locations.append(face_recognition.face_locations(rgb_frame))
+                self.face_encodings.append(face_recognition.face_encodings(rgb_frame, self.face_locations))
+
+
+                if process_this_frame:
+                    for face_encoding in self.face_encodings:
+                        matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
+                        name = "Unknown"
+
+                        face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
+                        best_match_index = np.argmin(face_distances)
+                        if matches[best_match_index]:
+                            name = self.known_face_names[best_match_index]
+                            msg.identified_face = name
+                            self.publisher_.publish(msg)
+                            self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
+                        else:
+                            msg.identified_face = 'Unknown'
+                            self.publisher_.publish(msg)
+                            self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
+
+                    self.face_names.append(name)
+
+                process_this_frame = not process_this_frame
+
+            # Display the results
+            for (top, right, bottom, left), name in zip(self.face_locations, self.face_names):
+
+                # Draw a box around the face
+                cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+
+                # Draw a label with a name below the face
+                cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
+                font = cv2.FONT_HERSHEY_DUPLEX
+                cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+
+            # Display the resulting image
+            cv2.imshow('Video', frame)
 
 def main(args=None):
     rclpy.init(args=args)

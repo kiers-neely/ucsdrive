@@ -1,0 +1,30 @@
+running egg_info
+writing ../../build/ride_request_pkg/ride_request_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/ride_request_pkg/ride_request_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/ride_request_pkg/ride_request_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/ride_request_pkg/ride_request_pkg.egg-info/requires.txt
+writing top-level names to ../../build/ride_request_pkg/ride_request_pkg.egg-info/top_level.txt
+reading manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/ride_request_pkg/ride_request_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg
+copying /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib/ride_request_pkg/ride_request_publisher.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg
+copying /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/build/lib/ride_request_pkg/__init__.py -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg
+byte-compiling /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg/ride_request_publisher.py to ride_request_publisher.cpython-310.pyc
+byte-compiling /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ament_index
+creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ament_index/resource_index
+creating /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ament_index/resource_index/packages
+copying resource/ride_request_pkg -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ride_request_pkg
+running install_egg_info
+Copying ../../build/ride_request_pkg/ride_request_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages/ride_request_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ride_request script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/ride_request_pkg
+writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg/install.log'

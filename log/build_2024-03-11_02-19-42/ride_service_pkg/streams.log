@@ -1,0 +1,30 @@
+[5.108s] Invoking command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/drafts/ride_service_pkg': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ride_service_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/install.log --single-version-externally-managed
+[5.759s] running egg_info
+[5.761s] writing ../../build/ride_service_pkg/ride_service_pkg.egg-info/PKG-INFO
+[5.762s] writing dependency_links to ../../build/ride_service_pkg/ride_service_pkg.egg-info/dependency_links.txt
+[5.763s] writing entry points to ../../build/ride_service_pkg/ride_service_pkg.egg-info/entry_points.txt
+[5.764s] writing requirements to ../../build/ride_service_pkg/ride_service_pkg.egg-info/requires.txt
+[5.764s] writing top-level names to ../../build/ride_service_pkg/ride_service_pkg.egg-info/top_level.txt
+[5.774s] reading manifest file '../../build/ride_service_pkg/ride_service_pkg.egg-info/SOURCES.txt'
+[5.778s] writing manifest file '../../build/ride_service_pkg/ride_service_pkg.egg-info/SOURCES.txt'
+[5.779s] running build
+[5.779s] running build_py
+[5.781s] running install
+[5.781s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.782s]   warnings.warn(
+[5.783s] running install_lib
+[5.786s] byte-compiling /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages/ride_service_pkg/ride_request_client.py to ride_request_client.cpython-310.pyc
+[5.787s]   File "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages/ride_service_pkg/ride_request_client.py", line 35
+[5.787s]     else:
+[5.788s]     ^^^^
+[5.788s] SyntaxError: expected 'except' or 'finally' block
+[5.788s] 
+[5.788s] running install_data
+[5.789s] running install_egg_info
+[5.794s] removing '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages/ride_service_pkg-0.0.1-py3.10.egg-info' (and everything under it)
+[5.795s] Copying ../../build/ride_service_pkg/ride_service_pkg.egg-info to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages/ride_service_pkg-0.0.1-py3.10.egg-info
+[5.801s] running install_scripts
+[5.870s] Installing ride_request_client script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/ride_service_pkg
+[5.870s] Installing ride_request_server script to /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/ride_service_pkg
+[5.871s] writing list of installed files to '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/install.log'
+[6.137s] Invoked command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/drafts/ride_service_pkg' returned '0': PYTHONPATH=/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/prefix_override:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/lib/python3.10/site-packages:/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/ride_service_pkg build --build-base /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/build install --record /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_service_pkg/install.log --single-version-externally-managed
