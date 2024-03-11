@@ -1,0 +1,7 @@
+{
+  "package_name": "user_input_interfaces",
+  "output_dir": "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_generator_type_description/user_input_interfaces",
+  "idl_tuples": [
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl"
+  ]
+}

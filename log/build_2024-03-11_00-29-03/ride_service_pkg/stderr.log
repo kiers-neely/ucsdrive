@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_service_pkg/lib/python3.10/site-packages/ride_service_pkg/ride_request_client.py", line 35
+    else:
+    ^^^^
+SyntaxError: expected 'except' or 'finally' block
+

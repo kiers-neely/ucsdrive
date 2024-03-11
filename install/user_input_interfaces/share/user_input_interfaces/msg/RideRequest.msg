@@ -1,0 +1,4 @@
+string first_name
+string last_name
+string pickup_location
+string dropoff_location

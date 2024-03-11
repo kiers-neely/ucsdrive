@@ -1,0 +1,3 @@
+[console_scripts]
+ride_request = ride_request_pkg.ride_request_publisher:main
+

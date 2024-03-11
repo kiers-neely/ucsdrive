@@ -1,0 +1,17 @@
+{
+  "package_name": "user_input_interfaces",
+  "output_dir": "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_typesupport_cpp/user_input_interfaces",
+  "template_dir": "/opt/ros/iron/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces:msg/RideRequest.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/iron/lib/python3.10/site-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/iron/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces/rosidl_adapter/user_input_interfaces/msg/RideRequest.idl"
+  ]
+}

@@ -1,0 +1,251 @@
+[1.990s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ride_request_pkg', 'user_input_interfaces', 'face_rec_pkg']
+[1.991s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ride_request_pkg', 'user_input_interfaces', 'face_rec_pkg'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc0933aa140>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc0933a9f00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc0933a9f00>>)
+[2.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.080s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.080s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4'
+[2.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.102s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['ignore', 'ignore_ament_install']
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'ignore'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'ignore_ament_install'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['colcon_pkg']
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'colcon_pkg'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['colcon_meta']
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'colcon_meta'
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['ros']
+[2.103s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'ros'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['cmake', 'python']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'cmake'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'python'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extensions ['python_setup_py']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts) by extension 'python_setup_py'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extension 'ignore'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extension 'ignore_ament_install'
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extensions ['colcon_pkg']
+[2.104s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extension 'colcon_pkg'
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extensions ['colcon_meta']
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extension 'colcon_meta'
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extensions ['ros']
+[2.105s] Level 1:colcon.colcon_core.package_identification:_identify(drafts/ride_service_pkg) by extension 'ros'
+[2.109s] DEBUG:colcon.colcon_core.package_identification:Package 'drafts/ride_service_pkg' with type 'ros.ament_python' and name 'ride_service_pkg'
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[2.110s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[2.111s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extension 'ignore'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extension 'ignore_ament_install'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extensions ['colcon_pkg']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extension 'colcon_pkg'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extensions ['colcon_meta']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extension 'colcon_meta'
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extensions ['ros']
+[2.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/face_rec_pkg) by extension 'ros'
+[2.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/face_rec_pkg' with type 'ros.ament_python' and name 'face_rec_pkg'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extension 'ignore'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extension 'ignore_ament_install'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extensions ['colcon_pkg']
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extension 'colcon_pkg'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extensions ['colcon_meta']
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extension 'colcon_meta'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extensions ['ros']
+[2.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/ride_request_pkg) by extension 'ros'
+[2.118s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ride_request_pkg' with type 'ros.ament_python' and name 'ride_request_pkg'
+[2.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[2.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extension 'ignore'
+[2.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extension 'ignore_ament_install'
+[2.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extensions ['colcon_pkg']
+[2.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extension 'colcon_pkg'
+[2.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extensions ['colcon_meta']
+[2.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extension 'colcon_meta'
+[2.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extensions ['ros']
+[2.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_input_interfaces) by extension 'ros'
+[2.120s] DEBUG:colcon.colcon_core.package_identification:Package 'src/user_input_interfaces' with type 'ros.ament_cmake' and name 'user_input_interfaces'
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ride_service_pkg' in 'drafts/ride_service_pkg'
+[2.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.346s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 296 installed packages in /opt/ros/iron
+[2.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.718s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_args' from command line to 'None'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_target' from command line to 'None'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.719s] Level 5:colcon.colcon_core.verb:set package 'user_input_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.719s] DEBUG:colcon.colcon_core.verb:Building package 'user_input_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces', 'merge_install': False, 'path': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces', 'symlink_install': False, 'test_result_base': None}
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_args' from command line to 'None'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_target' from command line to 'None'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.766s] Level 5:colcon.colcon_core.verb:set package 'face_rec_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.766s] DEBUG:colcon.colcon_core.verb:Building package 'face_rec_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/face_rec_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg', 'merge_install': False, 'path': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_args' from command line to 'None'
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_target' from command line to 'None'
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.812s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.813s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.813s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.813s] Level 5:colcon.colcon_core.verb:set package 'ride_request_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.813s] DEBUG:colcon.colcon_core.verb:Building package 'ride_request_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/ride_request_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg', 'merge_install': False, 'path': '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/ride_request_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.855s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.898s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.899s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces' with build type 'ament_cmake'
+[2.900s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces'
+[2.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces': CMAKE_PREFIX_PATH=/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces -- -j8 -l8
+[3.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces -- -j8 -l8
+[3.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces': CMAKE_PREFIX_PATH=/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --install /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces
+[4.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(user_input_interfaces)
+[4.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --install /home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/build/user_input_interfaces
+[4.082s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces' for CMake module files
+[4.083s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces' for CMake config files
+[4.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'cmake_prefix_path')
+[4.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.ps1'
+[4.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.dsv'
+[4.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.sh'
+[4.120s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib'
+[4.121s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'ld_library_path_lib')
+[4.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.ps1'
+[4.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.dsv'
+[4.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.sh'
+[4.153s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/bin'
+[4.153s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/pkgconfig/user_input_interfaces.pc'
+[4.154s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages'
+[4.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'pythonpath')
+[4.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.ps1'
+[4.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.dsv'
+[4.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.sh'
+[4.184s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/bin'
+[4.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.ps1'
+[4.222s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.dsv'
+[4.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.sh'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.bash'
+[4.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.zsh'
+[4.232s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/colcon-core/packages/user_input_interfaces)
+[4.397s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(user_input_interfaces)
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces' for CMake module files
+[4.426s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces' for CMake config files
+[4.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'cmake_prefix_path')
+[4.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.ps1'
+[4.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.dsv'
+[4.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/cmake_prefix_path.sh'
+[4.462s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib'
+[4.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'ld_library_path_lib')
+[4.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.ps1'
+[4.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.dsv'
+[4.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/ld_library_path_lib.sh'
+[4.491s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/bin'
+[4.492s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/pkgconfig/user_input_interfaces.pc'
+[4.492s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/lib/python3.10/site-packages'
+[4.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_input_interfaces', 'pythonpath')
+[4.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.ps1'
+[4.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.dsv'
+[4.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/hook/pythonpath.sh'
+[4.522s] Level 1:colcon.colcon_core.environment:checking '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/bin'
+[4.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.ps1'
+[4.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.dsv'
+[4.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.sh'
+[4.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.bash'
+[4.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/user_input_interfaces/package.zsh'
+[4.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/user_input_interfaces/share/colcon-core/packages/user_input_interfaces)
+[4.564s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/face_rec_pkg' with build type 'ament_python'
+[4.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('face_rec_pkg', 'ament_prefix_path')
+[4.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/share/face_rec_pkg/hook/ament_prefix_path.ps1'
+[4.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/share/face_rec_pkg/hook/ament_prefix_path.dsv'
+[4.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/face_rec_pkg/share/face_rec_pkg/hook/ament_prefix_path.sh'
+[4.648s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.648s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.709s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/ride_request_pkg' with build type 'ament_python'
+[4.710s] Level 1:colcon.colcon_core.shell:create_environment_hook('ride_request_pkg', 'ament_prefix_path')
+[4.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ride_request_pkg/hook/ament_prefix_path.ps1'
+[4.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ride_request_pkg/hook/ament_prefix_path.dsv'
+[4.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/ride_request_pkg/share/ride_request_pkg/hook/ament_prefix_path.sh'
+[4.808s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.808s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.539s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with 'Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.'
+[5.541s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.648s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.649s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.649s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.649s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.651s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[5.652s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.683s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/local_setup.ps1'
+[5.686s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/_local_setup_util_ps1.py'
+[5.689s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/setup.ps1'
+[5.720s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/local_setup.sh'
+[5.721s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/_local_setup_util_sh.py'
+[5.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/setup.sh'
+[5.750s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/local_setup.bash'
+[5.752s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/setup.bash'
+[5.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/local_setup.zsh'
+[5.782s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/install/setup.zsh'
