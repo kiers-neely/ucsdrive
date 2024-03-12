@@ -1,7 +1,0 @@
-{
-  "package_name": "user_input_interfaces",
-  "non_idl_tuples": [
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces:msg/RideRequest.msg",
-    "/home/kneely-ubuntu-22-04/project-repo/ucsd-mae-148-team-4/src/user_input_interfaces:msg/RideMatch.msg"
-  ]
-}

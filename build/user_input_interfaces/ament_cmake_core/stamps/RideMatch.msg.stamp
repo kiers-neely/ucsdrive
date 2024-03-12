@@ -1,1 +1,0 @@
-string identified_face

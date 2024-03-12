@@ -1,4 +1,0 @@
-[console_scripts]
-face_publisher = face_rec_pkg.face_publisher:main
-ride_match_publisher = face_rec_pkg.ride_match_publisher:main
-
