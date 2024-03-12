@@ -28,6 +28,12 @@ class FaceRecognitionPublisher(Node):
         self.load_known_faces(images_directory)
 
         self.video_capture = cv2.VideoCapture(0)
+        self.width = 640
+        self.height = 480
+        self.fps = 15
+        self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, self.width)
+        self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)
+        self.video_capture.set(cv2.CAP_PROP_FPS, self.fps)
 
 
     def load_known_faces(self, images_directory):
@@ -52,6 +58,9 @@ class FaceRecognitionPublisher(Node):
 
         while True:
             ret, frame = self.video_capture.read()
+            if not ret:
+                self.get_logger().info('Error reading frame')
+                break
 
             if process_this_frame:
                 # Resize frame of video to 1/4 size for faster face recognition processing
