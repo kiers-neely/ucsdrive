@@ -53,33 +53,35 @@ class FaceRecognitionPublisher(Node):
         while True:
             ret, frame = self.video_capture.read()
 
-            if ret:
-                frame_array = np.array(frame)
-                rgb_frame = frame_array[:, :, ::-1]
-                self.face_locations.append(face_recognition.face_locations(rgb_frame))
-                self.face_encodings.append(face_recognition.face_encodings(rgb_frame, self.face_locations))
+            if process_this_frame:
+                # Resize frame of video to 1/4 size for faster face recognition processing
+                small_frame = cv2.resize(frame, (0, 0), fx=1, fy=1)
+
+                # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
+                rgb_small_frame = cv2.cvtColor(small_frame, cv2.COLOR_BGR2RGB)
+                self.face_locations.append(face_recognition.face_locations(rgb_small_frame))
+                self.face_encodings.append(face_recognition.face_encodings(rgb_small_frame, self.face_locations))
 
 
-                if process_this_frame:
-                    for face_encoding in self.face_encodings:
-                        matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                        name = "Unknown"
+                for face_encoding in self.face_encodings:
+                    matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
+                    name = "Unknown"
 
-                        face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
-                        best_match_index = np.argmin(face_distances)
-                        if matches[best_match_index]:
-                            name = self.known_face_names[best_match_index]
-                            msg.identified_face = name
-                            self.publisher_.publish(msg)
-                            self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
-                        else:
-                            msg.identified_face = 'Unknown'
-                            self.publisher_.publish(msg)
-                            self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
+                    face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
+                    best_match_index = np.argmin(face_distances)
+                    if matches[best_match_index]:
+                        name = self.known_face_names[best_match_index]
+                        msg.identified_face = name
+                        self.publisher_.publish(msg)
+                        self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
+                    else:
+                        msg.identified_face = 'Unknown'
+                        self.publisher_.publish(msg)
+                        self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
 
                     self.face_names.append(name)
 
-                process_this_frame = not process_this_frame
+            process_this_frame = not process_this_frame
 
             # Display the results
             for (top, right, bottom, left), name in zip(self.face_locations, self.face_names):
