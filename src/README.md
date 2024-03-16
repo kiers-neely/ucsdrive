@@ -156,7 +156,7 @@ And, finally, if the identified face is not in the student database at all:
 ```console
 [INFO] [1710593040.285225018] [verification_service]: Request received from kiersten
 [INFO] [1710593114.458144907] [verification_service]: Received identified student Unknown
-[INFO] [1710593114.456945592] [verification_service]: Identities compared. Match: False. Sorry, cory, we could not verify you with ride request.
+[INFO] [1710593114.456945592] [verification_service]: Identities compared. Match: False. Sorry, we could not verify you in the student database.
 ```
 
 # More to come
