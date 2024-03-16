@@ -21,26 +21,22 @@ class VerificationService(Node):
     def ride_request_callback(self, msg):
         # Store the first name and identified name from the received messages
         self.first_name = msg.first_name
-        self.identified_face = msg.identified_face
-        self.get_logger().info('Received ride request from %s' % self.first_name)
+        self.get_logger().info('Request received from %s' % self.first_name)
 
     def ride_match_callback(self, msg):
         # Trigger the comparison when both first_name and identified_face are available
-        if hasattr(self, 'identified_face'):
-            self.compare_names(self.identified_face)
-        
-        self.get_logger().info('Received identified student %s' % self.identified_face)
+        if hasattr(self, 'first_name'):
+            self.compare_names(msg.identified_face)
+            self.get_logger().info('Received identified student %s' % msg.identified_face)
 
     def compare_names(self, identified_face):
         # Compare the names
         if self.first_name.lower() == identified_face.lower():
             is_match = True
-            self.get_logger().info('Identities compared. Match: %s' % is_match)
-            self.get_logger().info('Hi %s, Thank you for using UCSDrive!' % self.first_name)
+            self.get_logger().info(f'Identities compared. Match: {is_match}! Hi {self.first_name}, Thank you for using UCSDrive!')
         else:
             is_match = False
-            self.get_logger().info('Identities compared. Match: %s' % is_match)
-            self.get_logger().info('Sorry, %s, we could not verify you with ride request.' % identified_face)
+            self.get_logger().info(f'Identities compared. Match: {is_match}. Sorry, {self.first_name}, we could not verify you with ride request.')
 
         
 def main(args=None):
