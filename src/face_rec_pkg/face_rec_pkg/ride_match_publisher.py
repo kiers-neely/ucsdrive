@@ -5,8 +5,9 @@ from rclpy.node import Node
 class RideMatchPublisher(Node):
     def __init__(self):
         super().__init__('ride_match_publisher')
-        self.subscription = self.create_subscription(RideRequest, 'ride_requests', self.match_callback, 10)
+        self.subscription = self.create_subscription(RideRequest, 'ride_requests', self.request_callback, 10)
         self.subscription = self.create_subscription(RideMatch, 'identified_faces', self.match_callback, 10)
+        self.publisher_ = self.create_publisher(RideMatch, 'ride_requests', 10)
 
     def match_callback(self, msg):
         msg = RideRequest()

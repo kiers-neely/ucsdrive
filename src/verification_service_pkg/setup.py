@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
-package_name = 'face_rec_pkg'
+package_name = 'verification_service_pkg'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -15,14 +15,11 @@ setup(
     zip_safe=True,
     maintainer='kneely',
     maintainer_email='kneely@ucsd.edu',
-    description='TODO: Package description',
-    license='Apache License 2.0',
+    description='Package for verifying identity of ride requester',
+    license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-              'face_publisher = face_rec_pkg.face_publisher:main',
-              'ride_match_publisher = face_rec_pkg.ride_match_publisher:main',
-              'verification_service = face_rec_pkg.verification_service:main',
         ],
     },
-) 
+)
