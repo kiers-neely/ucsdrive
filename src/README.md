@@ -165,7 +165,7 @@ As much as we would love to have the whole thing running autonomously, ten weeks
 
 ## GPS with Point One Nav
 
-Currently, our car is trained in GPS waypoint following to autonomously navigate from a series of saved paths which we gathered using DonkeyCar. We have `.csv` path files that guide our robot from Base to Pickup, to be initiated once the ride request is published, as well as from Pickup to Dropoff if the student rider is correctly verified. We also have a third path saved from Dropoff back to Base, which our robot will choose to take if the ride cannot be veriifed.
+Currently, our car is trained in GPS waypoint following to autonomously navigate from a series of saved paths which we gathered using DonkeyCar. We have `.csv` path files that guide our robot from Base to Pickup, to be initiated once the ride request is published, as well as from Pickup to Dropoff if the student rider is correctly verified. We also have a third path saved from Dropoff back to Base, which our robot will choose to take if the ride cannot be verified.
 
 ## Stretch Goals
 ### Package Integration with UCSD Robocar Modules
