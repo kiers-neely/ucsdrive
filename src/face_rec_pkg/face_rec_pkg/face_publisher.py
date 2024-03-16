@@ -16,10 +16,6 @@ class FaceRecognitionPublisher(Node):
         # Initialize face encodings and names
         self.known_face_encodings = []
         self.known_face_names = []
-        self.face_locations = []
-        self.face_encodings = []
-        self.face_names = []
-
 
         # Path to your known faces images
         images_directory = 'src/known_faces' 
@@ -28,12 +24,12 @@ class FaceRecognitionPublisher(Node):
         self.load_known_faces(images_directory)
 
         self.video_capture = cv2.VideoCapture(0)
-        self.width = 640
-        self.height = 480
-        self.fps = 15
-        self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, self.width)
-        self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)
-        self.video_capture.set(cv2.CAP_PROP_FPS, self.fps)
+#        self.width = 640
+#        self.height = 480
+#        self.fps = 15
+#        self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, self.width)
+#        self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, self.height)
+#        self.video_capture.set(cv2.CAP_PROP_FPS, self.fps)
 
 
     def load_known_faces(self, images_directory):
@@ -53,6 +49,9 @@ class FaceRecognitionPublisher(Node):
     def publish_identified_face(self):
         msg = RideMatch()
         self.get_logger().info('Looking for faces...')
+        face_locations = []
+        face_encodings = []
+        face_names = []
 
         process_this_frame = True
 
@@ -64,15 +63,17 @@ class FaceRecognitionPublisher(Node):
 
             if process_this_frame:
                 # Resize frame of video to 1/4 size for faster face recognition processing
-                small_frame = cv2.resize(frame, (0, 0), fx=1, fy=1)
+                # small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
+                small_frame = frame[:,:,::-1]
+                code = cv2.COLOR_BGR2RGB
 
                 # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
-                rgb_small_frame = cv2.cvtColor(small_frame, cv2.COLOR_BGR2RGB)
-                self.face_locations.append(face_recognition.face_locations(rgb_small_frame))
-                self.face_encodings.append(face_recognition.face_encodings(rgb_small_frame, self.face_locations))
+                rgb_small_frame = cv2.cvtColor(small_frame, code)
+                face_locations = face_recognition.face_locations(rgb_small_frame)
+                face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
 
 
-                for face_encoding in self.face_encodings:
+                for face_encoding in face_encodings:
                     matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
                     name = "Unknown"
 
@@ -87,25 +88,35 @@ class FaceRecognitionPublisher(Node):
                         msg.identified_face = 'Unknown'
                         self.publisher_.publish(msg)
                         self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
-
-                    self.face_names.append(name)
+                        
+                    face_names.append(name)
+                        
 
             process_this_frame = not process_this_frame
 
             # Display the results
-            for (top, right, bottom, left), name in zip(self.face_locations, self.face_names):
-
-                # Draw a box around the face
-                cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
-
-                # Draw a label with a name below the face
-                cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
-                font = cv2.FONT_HERSHEY_DUPLEX
-                cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
-
+            for (top, right, bottom, left), name in zip(face_locations, face_names):
+            	# Scale back up to size
+#            	top *= 4
+#            	right *= 4
+#            	bottom *= 4
+#            	left *= 4
+            	
+            	# Draw box around face
+            	cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+            	
+            	# Draw a label with a name below the face
+            	cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
+            	font = cv2.FONT_HERSHEY_DUPLEX
+            	cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+            	
             # Display the resulting image
             cv2.imshow('Video', frame)
-
+            
+            # Hit 'q' to quit
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+            	break
+            	
 def main(args=None):
     rclpy.init(args=args)
     face_recognition_publisher = FaceRecognitionPublisher()

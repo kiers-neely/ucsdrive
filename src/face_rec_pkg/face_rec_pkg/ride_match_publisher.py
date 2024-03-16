@@ -8,7 +8,7 @@ class RideMatchPublisher(Node):
         self.subscription = self.create_subscription(RideRequest, 'ride_requests', self.match_callback, 10)
         self.subscription = self.create_subscription(RideMatch, 'identified_faces', self.match_callback, 10)
 
-    def request_callback(self, msg):
+    def match_callback(self, msg):
         msg = RideRequest()
         self.first_name = msg.first_name
         self.last_name = msg.last_name
