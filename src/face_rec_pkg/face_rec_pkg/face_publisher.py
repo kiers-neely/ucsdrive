@@ -10,7 +10,7 @@ class FaceRecognitionPublisher(Node):
     def __init__(self):
         super().__init__('face_recognition_publisher')
         self.publisher_ = self.create_publisher(RideMatch, 'identified_faces', 10)
-        self.timer_period = 0.1  # seconds
+        self.timer_period = 2  # seconds
         self.timer = self.create_timer(self.timer_period, self.publish_identified_face)
 
         # Initialize face encodings and names
@@ -75,7 +75,7 @@ class FaceRecognitionPublisher(Node):
 
                 for face_encoding in face_encodings:
                     matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                    name = "User Unknown"
+                    name = "Unknown"
 
                     face_distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
                     best_match_index = np.argmin(face_distances)
@@ -83,13 +83,15 @@ class FaceRecognitionPublisher(Node):
                         name = self.known_face_names[best_match_index]
                         msg.identified_face = name
                         self.publisher_.publish(msg)
-                        self.get_logger().info(f'Identified {msg.identified_face} - Welcome! Confirming rider match...')
+                        self.get_logger().info(f'Identified UCSD student {msg.identified_face}: Welcome! Verifying with ride request...')
+                        face_names.append(name)
                     else:
-                        msg.identified_face = 'Unknown'
+                        msg.identified_face = name
                         self.publisher_.publish(msg)
                         self.get_logger().info(f'Student not found in database. Please register to access UCSDrive! services.')
                         
-                    face_names.append(name)
+
+                face_names.append(msg.identified_face)
                         
 
             process_this_frame = not process_this_frame
