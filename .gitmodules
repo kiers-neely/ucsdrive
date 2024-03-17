@@ -1,3 +1,0 @@
-[submodule "src/ucsd-robocar2-hub"]
-	path = src/ucsd-robocar2-hub
-	url = git@github.com:kiers-neely/ucsd-robocar2-hub.git
