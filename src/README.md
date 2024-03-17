@@ -56,7 +56,7 @@ string identified_face
 ### Package: `face_rec_pkg`
 ### Node: `verification_service`
 
-Now that we have a node publishing our user input interface messages, we can call the face recognition service. 
+Now that we have a node publishing our user input interface messages, we can call the identity verification service. 
 
 In a new terminal, the user can source the install again and initiate the verification service. This node will then confirm initiation and wait for both necessary message types to be defined in order to return a boolean match assessment of the names. *Don't forget to source again!*
 
