@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h1 align="center">UCSDrive! Autonomous Rideshare Service</h1>
+<h1 align="center">UCSDrive! Autonomous Campus Rideshare</h1>
 
 <!-- PROJECT LOGO -->
 <br />
