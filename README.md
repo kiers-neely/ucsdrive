@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/kiers-neely/ucsd-mae-148-team-4">
+  <a href="https://jacobsschool.ucsd.edu/">
     <img src="images\UCSDLogo_JSOE_BlueGold.png" alt="Logo" width="400" height="100">
   </a>
 <h3>MAE148 Final Project</h3>
@@ -23,12 +23,18 @@ Team 4 Winter 2024
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#team-members">Team Members</a>
-    </li>
+    <li><a href="#team-members">Team Members</a></li>
     <li><a href="#final-project">Final Project</a></li>
       <ul>
-        <li><a href="#primary-goals">Primary Goals</a></li>
+        <li><a href="#original-goals">Original Goals</a></li>
+          <ul>
+            <li><a href="#goals-we-met">Goals We Met</a></li>
+            <li><a href="#our-hopes-and-dreams">Our Hopes and Dreams</a></li>
+              <ul>
+                <li><a href="#stretch-goal-1">Stretch Goal 1</a></li>
+                <li><a href="#stretch-goal-2">Stretch Goal 2</a></li>
+              </ul>
+          </ul>
         <li><a href="#final-project-documentation">Final Project Documentation</a></li>
       </ul>
     <li><a href="#robot-design">Robot Design </a></li>
@@ -75,26 +81,56 @@ Team 4 Winter 2024
 
 Our project goal was to develop a prototype of an a self-driving campus rideshare service exclusively for UCSD students that utilizes facial recognition as an extra element of safety and security for students. We aimed to develop ROS2 packages that would run in conjunction with the UCSD Robocar framework, programming our car to effectively perform controlled tasks while driving autonomously.
 
-<!-- Primary Goals -->
-### Primary Goals
-- User Input
-  - When launching this node, the user will be prompted to define 3 variables
-    - `name` 
-    - `pickup` 
-    - `dropoff` 
+<!-- Original Goals -->
+### Original Goals
+- Ride Request
+  - When launching this node, the user will be prompted to define 4 variables
+    - `first_name`
+    - `last_name` 
+    - `pickup_location` 
+    - `dropoff_location` 
   - This "ride-request" node will then publish these details to a topic to be accessed by additional nodes to determine the robot's subsequent actions
-- GPS navigation
-  - A package dedicated to extracting the pickup and dropoff locations, which will be converted to their corresponding `.csv` path datasets and used in mapping the route and navigating the path
-    - Subscribes to the `pickup` and `dropoff` location topics and matches the input to a saved path such as `ebu2-to-ebu1.csv`
+- Custom User Interfaces
+  - This package defines custom interfaces for the parameters entered by the user
+  - Stores the user input data under predefined values for our nodes to access and compare, i.e. `identiifed_face` and `first_name` of ride request
 - Face Recognition
-  - Client/server nodes that will be subscribed to the "Name" message given by the user 
+  - Facial recognition and verification nodes that will be subscribed to the "Name" message given by the user and publish to a new topic
     - Upon arriving at the pickup point, this module will deploy facial recognition using open-source Python libraries (`face_recognition, cv2, dlib`) 
     - The service will initiate a live webcam stream through a mounted Oak-D Lite and attempt to identify the student
     - If the student's identity is correctly verified as the individual who requested the ride, the navigation to dropoff will be authorized
     - If the identified student does not match the name given in the ride request, the car will cancel pickup and return to base
+- GPS navigation
+  - A package dedicated to extracting the pickup and dropoff locations, which will be converted to their corresponding `.csv` path datasets and used in mapping the route and navigating the path
+    - Subscribes to the `pickup` and `dropoff` location topics and matches the input to a saved path such as `ebu2-to-ebu1.csv`
+    - Client/Action server node structure so the driving process happens one time as a service, unlike the publisher nodes
 - LiDAR
   - A package for utilizing mounted LiDAR LD06 for object detection as a safety measurement for collision avoidance
     - This should launch as a submodule as part of the overall Robocar package that runs in the background for emergency stop capabilities
+   
+<!-- End Results -->
+### Goals We Met
+- [`ride_request_publisher.py`](src/ride_request_pkg/ride_request_pkg/ride_request_publisher.py): ride request node
+- [`user_input_interfaces`](src/user_input_interfaces/msg): custom interface definitions
+  - [`RideRequest.msg`](src/user_input_interfaces/msg/RideRequest.msg)
+  - [`RideMatch.msg`](src/user_input_interfaces/msg/RideMatch.msg)
+- [`face_rec_pkg`](src/face_rec_pkg/face_rec_pkg): face recognition package
+  - [`face_publisher.py`](src/face_rec_pkg/face_rec_pkg/face_publisher.py): face recognition node for publishing identified name and video stream
+  - [`verification_service.py`](src/face_rec_pkg/face_rec_pkg/verification_service.py): identity verification node
+
+See [`README`](src/README.md) section in our `src` directory for breakdown of how our packages run together
+
+See [`README`](docker/README.md) section in our `docker` directory for breakdown of how to run the Docker container for our program with all dependencies built into the image
+
+### Our Hopes and Dreams
+#### Stretch Goal 1
+- GPS navigation
+  - We successfully trained our car in several different paths using GPS in DonkeyCar and storing the paths as `.csv` files
+  - Unfortunately we didn't have enough time to ROS-ify the Donkey GPS methods to use them with our ROS/Robocar modules
+
+#### Stretch Goal 2
+- LiDAR
+  - If our car is driving autonomously with GPS only, we would definitely activate the LiDAR to incorporate an emergency stop
+  - Object detection for collision avoidance on while driving on the pretrained GPS paths
 
 ### Final Project Documentation
 
