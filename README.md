@@ -124,9 +124,9 @@ See [`README`](docker/README.md) section in our `docker` directory for breakdown
 
 ### Our Hopes and Dreams
 #### Stretch Goal 1
-- GPS integration into ROS
-  - We successfully trained our car in several different paths using GPS in DonkeyCar and storing the paths as `.csv` files
-  - Unfortunately we didn't have enough time to ROS-ify the Donkey GPS methods to use them with our ROS/Robocar modules
+- Complete package integration with ROS
+  - We successfully trained our car in several different paths using GPS PointOneNav in DonkeyCar and storing the paths as `.csv` files
+  - Unfortunately we didn't have enough time to ROS-ify the Donkey GPS framework to run them from within our ROS/Robocar modules
 
 #### Stretch Goal 2
 - LiDAR
